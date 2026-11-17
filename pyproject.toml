@@ -1,0 +1,34 @@
+[project]
+name = "neuronest"
+version = "0.1.0"
+description = "Neuronest - AI mental health support chatbot"
+readme = "README.md"
+authors = [
+    { name = "Rehan54691", email = "rehan54691@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.116.1",
+    "geopy>=2.4.1",
+    "googlemap>=0.1.0",
+    "googlemaps>=4.10.0",
+    "langchain>=0.3.27",
+    "langchain-groq>=0.3.8",
+    "langchain-openai>=0.3.28",
+    "langgraph>=0.6.0",
+    "ollama>=0.5.1",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.4",
+    "streamlit>=1.47.1",
+    "twilio>=9.7.0",
+    "uvicorn>=0.35.0",
+]
+
+[project.scripts]
+neuronest = "neuronest:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
